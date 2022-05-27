@@ -9,6 +9,9 @@
 \*************************************************************************/
 
 /* Listing 3-2 */
+#ifdef __cplusplus
+extern "C"{
+#endif
 
 #ifndef ERROR_FUNCTIONS_H
 #define ERROR_FUNCTIONS_H
@@ -38,4 +41,8 @@ void usageErr(const char *format, ...) NORETURN ;
 
 void cmdLineErr(const char *format, ...) NORETURN ;
 
+#endif
+
+#ifdef __cplusplus
+}
 #endif

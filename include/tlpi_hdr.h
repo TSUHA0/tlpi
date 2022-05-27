@@ -9,6 +9,9 @@
 \*************************************************************************/
 
 /* Listing 3-1 */
+#ifdef __cplusplus
+extern "C"{
+#endif
 
 #ifndef TLPI_HDR_H
 #define TLPI_HDR_H      /* Prevent accidental double inclusion */
@@ -31,4 +34,8 @@ typedef enum { FALSE, TRUE } Boolean;
 #define min(m,n) ((m) < (n) ? (m) : (n))
 #define max(m,n) ((m) > (n) ? (m) : (n))
 
+#endif
+
+#ifdef __cplusplus
+}
 #endif

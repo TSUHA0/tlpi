@@ -9,6 +9,9 @@
 \*************************************************************************/
 
 /* Listing 3-5 */
+#ifdef __cplusplus
+extern "C"{
+#endif
 
 #ifndef GET_NUM_H
 #define GET_NUM_H
@@ -25,4 +28,8 @@ long getLong(const char *arg, int flags, const char *name);
 
 int getInt(const char *arg, int flags, const char *name);
 
+#endif
+
+#ifdef __cplusplus
+}
 #endif
